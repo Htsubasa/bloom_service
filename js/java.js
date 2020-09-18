@@ -3,7 +3,7 @@ $(function () {
   $(".slider").slick({
     arrow: true,
     autoplay: true,
-    autoplaySpeed: 15000,
+    autoplaySpeed: 3500,
     centerMode: true,
     dots: true,
     // fade: true,
@@ -15,6 +15,27 @@ $(function () {
     cssEase: 'linear',
   });
 });
+
+
+$(function () {
+  $(".item_wrap_pc").slick({
+    arrow: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    centerMode: true,
+    dots: true,
+    // fade: true,
+    slidesToShow: 2,
+    speed: 1000,
+    variableWidth: true,
+    centerMode: true,
+    centerPadding: '30%',
+    cssEase: 'linear',
+  });
+});
+
+
+
 
 
 $(function(){
@@ -38,6 +59,12 @@ $(function(){
 		$(".btn-gnavi").css({display:"none"});
 	});
 });
+
+
+
+
+
+
 
 $(function () {
   var topBtn = $('.footer-center'); // ボタンを指定
@@ -136,6 +163,21 @@ $(window).scroll(function (){
 });
 
 
+$(window).scroll(function (){
+  $('.menu-wrap img').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 100){
+            $(this).addClass('active');
+          }
+      });
+});
+
+
+
+
+
 
 
 $(window).scroll(function (){
@@ -214,6 +256,18 @@ $(window).scroll(function (){
 
 
 $(window).scroll(function (){
+  $('.gallery_item_pc').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
+
+$(window).scroll(function (){
   $('.top_text_block').each(function(){
       var elemPos = $(this).offset().top,
           scroll = $(window).scrollTop(),
@@ -251,6 +305,21 @@ $(window).scroll(function (){
 
 
 
+$(window).scroll(function (){
+  $('.item_even').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
+
+
+
+
 
 $(window).scroll(function (){
   $('.item h2').each(function(){
@@ -265,6 +334,18 @@ $(window).scroll(function (){
 
 
 
+$(window).scroll(function (){
+  $('.item_even h2').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
+
 
 $(window).scroll(function (){
   $('.item_box').each(function(){
@@ -276,6 +357,20 @@ $(window).scroll(function (){
           }
       });
 });
+
+
+
+$(window).scroll(function (){
+  $('.item_box_even').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
 
 
 $(window).scroll(function (){
@@ -304,6 +399,41 @@ $(window).scroll(function (){
 
 $(window).scroll(function (){
   $('.product').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
+
+$(window).scroll(function (){
+  $('.food_menu_pc').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
+$(window).scroll(function (){
+  $('.drink_menu_pc').each(function(){
+      var elemPos = $(this).offset().top,
+          scroll = $(window).scrollTop(),
+          windowHeight = $(window).height();
+        if (scroll > elemPos - windowHeight + 40){
+            $(this).addClass('active');
+          }
+      });
+});
+
+
+$(window).scroll(function (){
+  $('.course_menu_pc').each(function(){
       var elemPos = $(this).offset().top,
           scroll = $(window).scrollTop(),
           windowHeight = $(window).height();
