@@ -597,7 +597,7 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text h1 {
 }
 
 html body .mainvisual .mainvisual-wrap .mainvisual_text h1 .sub_mainvisual_text {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
   margin-bottom: 43px;
@@ -607,7 +607,7 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text h1 .sub_mainvisual_text 
 html body .mainvisual .mainvisual-wrap .mainvisual_text p {
   color: white;
   font-family: 'Noto Sans JP', sans-serif;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: normal;
   line-height: 2;
 }

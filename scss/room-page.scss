@@ -315,10 +315,15 @@ body{
 
     }/*h1*/
 
+    .middle_text{
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
   p{
       color: white;
       @include font-type-third();
-      font-size: 13px;
+      font-size: 16px;
       font-weight: normal;
       line-height: 2;
       
