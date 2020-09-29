@@ -596,11 +596,16 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text h1 {
 }
 
 html body .mainvisual .mainvisual-wrap .mainvisual_text h1 .sub_mainvisual_text {
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'Noto Sans JP', sans-serif;
   display: block;
   margin-bottom: 43px;
   font-weight: normal;
+}
+
+html body .mainvisual .mainvisual-wrap .mainvisual_text .middle_text {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 html body .mainvisual .mainvisual-wrap .mainvisual_text p {

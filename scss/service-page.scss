@@ -304,7 +304,7 @@ body{
             }
       
              .sub_mainvisual_text{
-                 font-size:14px;
+                 font-size:15px;
                  @include font-type-third();
                  display: block;  
                  margin-bottom: 43px;
@@ -313,6 +313,12 @@ body{
              }/*sub_mainvisual_text*/
       
             }/*h1*/
+
+
+            .middle_text{
+              margin-top: 15px;
+              margin-bottom: 15px;
+            }
       
           p{
               color: white;
@@ -320,7 +326,7 @@ body{
               font-size: 13px;
               font-weight: normal;
               line-height: 2;
-              
+
               .sp_br{
                 display: initial;
       
