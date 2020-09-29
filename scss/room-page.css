@@ -548,11 +548,11 @@ html body .mainvisual {
 
 html body .mainvisual .mainvisual-wrap {
   position: relative;
-  background-image: url(../img/room/room_pic.png);
-  background-size: cover;
+  background-image: url(../img/room/room_main.png);
+  background-size: contain;
   text-align: center;
   width: 95%;
-  height: 777px;
+  height: 710px;
   margin: 0 auto;
   /*mainvisual-text*/
 }
@@ -644,7 +644,7 @@ html body .mainvisual .mainvisual-wrap::before {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 777px;
+  height: 710px;
 }
 
 @media (max-width: 375px) {
