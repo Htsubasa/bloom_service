@@ -133,7 +133,6 @@
     background-size: contain;
     display: none;
 
-
 }
 
 
@@ -219,7 +218,7 @@ display: none;
     position: absolute;
     bottom: -25px;
     display: block;
-    width: 50%;
+    width: 20%;
     padding: 0;
     margin: 0;
     list-style: none;

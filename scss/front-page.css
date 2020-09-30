@@ -345,6 +345,12 @@ html body header {
   /*header-inner*/
 }
 
+@media (max-width: 560px) {
+  html body header {
+    margin-bottom: 0px;
+  }
+}
+
 html body header img {
   position: absolute;
   z-index: -1;
@@ -593,44 +599,19 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button {
 
 html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
   content: '';
-  width: 20px;
+  width: 40px;
   text-indent: 0px;
   position: absolute;
-  top: -80px;
-  left: 870px;
+  top: -58px;
+  left: 75vw;
   border-bottom: 3px solid white;
-}
-
-@media (max-width: 1180px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
-    left: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
-    left: 360px;
-  }
-}
-
-@media (max-width: 560px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
-    left: 200px;
-  }
-}
-
-@media (max-width: 425px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
-    top: -50px;
-    left: 0px;
-  }
 }
 
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
-    width: 25px;
-    top: 0;
-    left: 0;
+    top: -5px;
+    left: -4vw;
+    width: 20px;
   }
 }
 
@@ -638,41 +619,22 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:b
   content: '01';
   color: #6CD6DB;
   position: absolute;
-  top: -72px;
-  left: 850px;
+  top: -50px;
+  left: 73vw;
   font-weight: bold;
-}
-
-@media (max-width: 1180px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:before {
-    left: 470px;
-  }
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 @media (max-width: 768px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:before {
-    left: 330px;
-  }
-}
-
-@media (max-width: 560px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:before {
-    left: 174px;
-  }
-}
-
-@media (max-width: 425px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:before {
-    top: -40px;
-    left: -25px;
+    left: 70vw;
   }
 }
 
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:before {
-    width: 25px;
-    top: 10px;
-    left: -30px;
+    left: -10vw;
+    top: 0px;
   }
 }
 
@@ -680,41 +642,34 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:af
   content: '02';
   color: white;
   position: absolute;
-  top: -72px;
-  left: 880px;
+  top: -50px;
+  left: 78vw;
   font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 @media (max-width: 1180px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:after {
-    left: 550px;
+    left: 79.5vw;
   }
 }
 
 @media (max-width: 768px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:after {
-    left: 410px;
+    left: 81.5vw;
   }
 }
 
 @media (max-width: 560px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:after {
-    left: 240px;
-  }
-}
-
-@media (max-width: 425px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:after {
-    top: -40px;
-    left: 40px;
+    left: 80.5vw;
   }
 }
 
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:after {
-    width: 25px;
-    top: 10px;
-    left: 30px;
+    left: 4vw;
+    top: 0px;
   }
 }
 
@@ -727,45 +682,36 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active bu
 }
 
 html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
-  width: 20px;
+  width: 40px;
   content: '';
   text-indent: 0px;
   position: absolute;
-  top: -80px;
-  left: 820px;
+  top: -58px;
+  left: 75vw;
   border-bottom: 3px solid #6CD6DB;
-}
-
-@media (max-width: 1180px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
-    left: 500px;
-  }
-}
-
-@media (max-width: 768px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
-    left: 360px;
-  }
-}
-
-@media (max-width: 560px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
-    left: 200px;
-  }
-}
-
-@media (max-width: 425px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
-    top: -50px;
-    left: 0px;
-  }
 }
 
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
-    width: 25px;
-    top: 0px;
-    left: 0;
+    top: -5px;
+    left: 0px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  html body .mainvisual .mainvisual-wrap .slider-wrap #pc_slider {
+    display: none;
+  }
+}
+
+html body .mainvisual .mainvisual-wrap .slider-wrap #sp_slider {
+  display: none;
+}
+
+@media (max-width: 560px) {
+  html body .mainvisual .mainvisual-wrap .slider-wrap #sp_slider {
+    display: initial;
   }
 }
 
@@ -802,7 +748,7 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img {
 }
 
 html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img img {
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
   height: 660px;
   text-align: center;
@@ -1684,11 +1630,20 @@ html body .gallery_pc .gallery_wrap_pc .gallery-h2.active {
           transform: translate(0, 0);
 }
 
+html body .gallery_pc .item_wrap_pc.active {
+  -webkit-transform: translate(0px, 0);
+          transform: translate(0px, 0);
+}
+
 html body .gallery_pc .item_wrap_pc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 83px;
+  transform: translate(280px, 0px);
+  -webkit-transform: translate(280px, 0px);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
   /*slick-dots*/
   /*gallery-item*/
 }
@@ -2074,7 +2029,6 @@ html body .event_pc .event_pc_wrap .event-content {
   margin: auto;
   height: 307px;
   /*h2*/
-  border-bottom: 2px solid white;
   /*p*/
 }
 
@@ -2175,7 +2129,7 @@ html body .event-wrap .event-content h2 {
   color: #6CD6DB;
   margin-bottom: 25px;
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @media (max-width: 560px) {

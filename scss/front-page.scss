@@ -62,6 +62,10 @@ body{
     header{
 
       margin-bottom: 28px;
+
+      @include sp(){
+        margin-bottom: 0px;
+      }
     
       img{
         position: absolute;
@@ -290,77 +294,50 @@ body{
         button{
           &:before{
         content: '';
-        width: 20px;
+        width: 40px;
         text-indent: 0px;
         position: absolute;
-        top: -80px;
-        left: 870px;
+        top: -58px;
+        left: 75vw;
         border-bottom: 3px solid white;
 
-
-        @include pc{
-          left: 500px;
+        @include sp-second(){
+          top: -5px;
+          left: -4vw;
+          width: 20px;
         }
- 
-        @include tab{
-          left: 360px;
-        }
-
-        @include sp{
-          left:200px;
-        }
-
-        @include sp-sub{
-          top: -50px;
-          left:0px;
-        }
+        
 
 
-        @include sp-second{
-          width: 25px;
-          top: 0;
-          left: 0;
-        }
+      
 
         }/*before*/
           }/*button*/
         }/*li*/
 
+        
+
         li:first-child:before{
           content: '01';
           color: #6CD6DB;
           position: absolute;
-          top: -72px;
-          left: 850px;
+          top: -50px;
+          left: 73vw;
           font-weight: bold; 
+          @include font-type-third();
 
-          @include pc{
-            left: 470px;
-          }
-
-    
           @include tab{
-            left: 330px;
+            left: 70vw;
           }
 
 
-          @include sp{
-            left:174px;
+          @include sp-second(){
+            left:-10vw;
+            top: 0px;
           }
-
-          @include sp-sub{
-            top: -40px;
-            left:-25px;
-          }
-  
-  
-
-        @include sp-second{
-          width: 25px;
-          top:10px;
-          left: -30px;
-        }
-
+        
+       
+          
 
         }/*li:first-child:before*/
   
@@ -368,39 +345,32 @@ body{
           content: '02';
           color: white;
           position: absolute;
-          top: -72px;
-          left: 880px;
+          top: -50px;
+          left: 78vw;
           font-weight: bold;
-
+          @include font-type-third();
 
           @include pc{
-            left: 550px;
+            left: 79.5vw;
           }
 
-       
           @include tab{
-            left: 410px;
+            left: 81.5vw;
           }
 
 
-        @include sp{
-          left: 240px;
-        }
+          @include sp(){
+            left:80.5vw;
+          }
 
-        @include sp-sub{
-          top: -40px;
-          left:40px;
-        }
+          @include sp-second(){
+            left: 4vw;
+            top: 0px;
 
+          }
+    
 
-        @include sp-second{
-          width: 25px;
-          top: 10px;
-          left: 30px;
-        }
-
-
-
+      
         }
 
         
@@ -408,44 +378,44 @@ body{
         .slick-active{
           button{
           &:before{
-        width: 20px;
+        width: 40px;
         content: '';
         text-indent: 0px;
         position: absolute;
-        top: -80px;
-        left: 820px;
+        top: -58px;
+        left: 75vw;
         border-bottom: 3px solid #6CD6DB;
 
-        @include pc{
-          left: 500px;
+        @include sp-second(){
+          top: -5px;
+          left: 0px;
+          width: 20px;
         }
 
-        @include tab{
-          left: 360px;
-        }
-
-
-        @include sp{
-          left: 200px;
-        }
-
-        @include sp-sub{
-          top: -50px;
-          left:0px;
-        }
-
-
-        @include sp-second{
-          width: 25px;
-          top: 0px;
-          left: 0;
-        }
+   
+    
 
         }/*before*/
           }/*button*/
         }/*li*/
 
       }/*slick-dots*/
+
+      #pc_slider{
+        @include sp(){
+          display: none;
+        }
+      }
+
+
+      #sp_slider{
+        display: none;
+
+        @include sp(){
+          display: initial;
+        }
+
+      }
       
 
     .slider{
@@ -454,10 +424,9 @@ body{
       position: relative;
       
 
-
       li{
         list-style: none;
-
+       
         .slider-img{
           text-align: center;
           width: 93%;
@@ -468,6 +437,10 @@ body{
             text-align: center;
             width: 100%;
           }
+
+          @include sp-second(){
+          }
+          
           
 
 
@@ -477,7 +450,7 @@ body{
           
         
         img{
-          width: 30%;
+          width: 100%;
           margin: 0 auto;
           height: 660px;
 
@@ -498,9 +471,7 @@ body{
       }/*slider-img*/
     }/*li*/
     }/*slider*/
-
-
-    
+  
     }
 
 
@@ -629,6 +600,8 @@ span:after{
     }/*scroll_wrap*/
 }/*mainvisual-wrap*/
 }/*mainvisual*/
+
+
 
 
 
@@ -1304,9 +1277,17 @@ span:after{
 }/*gallery-wrap_pc*/
 
 
+.item_wrap_pc.active{
+  transform : translate(0px, 0);
+}
+
+
 .item_wrap_pc{
   display: flex;
   margin-top: 83px;
+  transform : translate(280px, 0px);
+  -webkit-transform: translate(280px, 0px);
+  transition : all 1.5s;
 
 
   .slick-dots{
@@ -1696,7 +1677,6 @@ span:after{
 
       }/*h2*/
 
-      border-bottom: 2px solid white;
       p{
           color: white;
           display: inline-block;
@@ -1765,7 +1745,8 @@ span:after{
                 color: #6CD6DB;
                 margin-bottom: 25px;
                 @include font-type-third;
-                font-weight: normal;
+                font-weight: bold;
+
 
                 @include sp{
                 font-size: 22px;  
