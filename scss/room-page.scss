@@ -50,6 +50,7 @@ body{
     @include font-type-third;
 
 
+
     header{
 
       margin-bottom: 28px;
@@ -75,7 +76,7 @@ body{
         }
     
       @include sp-second{
-        padding-top: 10px; 
+        padding-top: 32px; 
       }
        
         
@@ -93,7 +94,7 @@ body{
     
     
           @include sp-second {
-            font-size: 2em;
+            font-size: 25px;
           }
     
           a{
@@ -160,7 +161,6 @@ body{
     
         }/*header-nav*/
     
-      
     
     
     
@@ -263,21 +263,27 @@ body{
     .mainvisual-wrap{
         position: relative;
         background-image: url(../img/room/room_main.png);
-        background-size: contain;
+        background-size: 100% 770px;
         text-align: center;
         width: 95%;
-        height: 710px;
+        height: 770px;
         margin: 0 auto;
     
     
+      
+        @include sp{
+          background-image: url(../img/room/room_sp.png);
+    
+        }
+    
         @include sp-second(){
+          background-size: 100% 715px;
           width: 94.5%;
           margin-right: 10px;
           margin-left: 10px;
           height: 715px;
         }
     
-      
 
 
     .mainvisual_text{
@@ -311,6 +317,7 @@ body{
          margin-bottom: 43px;
          font-weight: normal;
 
+
      }/*sub_mainvisual_text*/
 
     }/*h1*/
@@ -318,6 +325,8 @@ body{
     .middle_text{
       margin-top: 15px;
       margin-bottom: 15px;
+
+      
     }
 
   p{
@@ -326,9 +335,13 @@ body{
       font-size: 16px;
       font-weight: normal;
       line-height: 2;
+
+      @include sp-second(){
+        font-size: 13px;
+      }
       
       .sp_br{
-        display: initial;
+        display: none;
 
         @include sp-second(){
           display: initial;
@@ -363,7 +376,7 @@ body{
   top: 0;
   left: 0;
   background-color: rgba(0,0,0,0.3);
-  height: 710px;
+  height: 770px;
 
   @include sp-second(){
     height: 715px;
@@ -903,8 +916,13 @@ body{
 
 
 
+
 .access{
-  margin-top: 92px;
+  margin-top: 120px;
+
+  @include sp-second(){
+    margin-top: 70px;
+  }
 
   &-wrap{
       text-align: center;
@@ -979,6 +997,7 @@ body{
 
 
 
+
 .contact{
 
   &-wrapper{
@@ -1009,84 +1028,97 @@ body{
     a{
       display: flex;
   
-    .cp_arrows {
+      .cp_arrows {
   
-      width: 76px;
-      height: 76px;
-        border-radius: 50%;/*角丸*/
-        border: solid 3px #FFFFFF;
-  
-        @include sp-second(){
-          width: 34px;
-          height: 34px;
-        }
-  
-  
-    }
-    .cp_arrows [class*='cp_arrow'] {
-        position: relative;
-        display: inline-block;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        vertical-align: middle;
-        color: #FFFFFF;
-    }
-    .cp_arrows [class*='cp_arrow']:after,
-    .cp_arrows [class*='cp_arrow']:before {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        content: '';
-    }
-    .cp_arrows [class*='cp_arrow'] {
-      width: 14px;
-      height: 15px;
-      top: 1em;
-      left: 14px;
-        margin: 0.8em;
-        border-width: 4px 4px 0 0;
-        border-style: solid;
-  
-        @include sp-second(){
-          width: 10px;
-          height: 12px;  
-          top: -0.3em;
-          left: -3px;  
-        }
-  
-    }
-    .cp_arrows [class*='cp_arrow']:before,
-    .cp_arrows [class*='cp_arrow']:after {
-        position: absolute;
-    }
-  
-    .cp_arrows [class*='cp_arrow']:before {
-        top: -2px;
-        right: 1.3px;
-        width: 15px;
-        height: 4px;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        -webkit-transform-origin: right top;
-                transform-origin: right top;
-        -webkit-box-shadow: inset 0 0 0 32px;
-                box-shadow: inset 0 0 0 24px;
-    }
-    .cp_arrows [class*='cp_arrow']:after {
-        top: -4px;
-        left: -2px;
-        -webkit-box-shadow: inset 0 0 0 32px, 16px 17px;
-                box-shadow: inset 0 0 0 24px, 8px 9px;
-    }
-  
-    .cp_arrows .cp_arrow_right_up {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-    }
-  
+        width: 76px;
+        height: 76px;
+          border-radius: 50%;/*角丸*/
+          border: solid 3px #FFFFFF;
+    
+          @include sp-second(){
+            width: 34px;
+            height: 34px;
+          }
+    
+    
+      }
+      .cp_arrows [class*='cp_arrow'] {
+          position: relative;
+          display: inline-block;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          vertical-align: middle;
+          color: #FFFFFF;
+      }
+      .cp_arrows [class*='cp_arrow']:after,
+      .cp_arrows [class*='cp_arrow']:before {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          content: '';
+      }
+      .cp_arrows [class*='cp_arrow'] {
+        width: 14px;
+        height: 15px;
+        top: 1em;
+        left: 14px;
+          margin: 0.8em;
+          border-width: 4px 4px 0 0;
+          border-style: solid;
+    
+          @include sp-second(){
+            width: 10px;
+            height: 12px;  
+            top: -0.3em;
+            left: -3px;  
+            border-width: 2px 2px 0 0;
+
+          }
+    
+      }
+      .cp_arrows [class*='cp_arrow']:before,
+      .cp_arrows [class*='cp_arrow']:after {
+          position: absolute;
+      }
+    
+      .cp_arrows [class*='cp_arrow']:before {
+          top: -2px;
+          right: 1.3px;
+          width: 15px;
+          height: 4px;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          -webkit-transform-origin: right top;
+                  transform-origin: right top;
+          -webkit-box-shadow: inset 0 0 0 32px;
+                  box-shadow: inset 0 0 0 24px;
+
+              @include sp-second(){
+                width: 13px;
+                height: 2px;
+                right: -0.3px;
+                top: -2.3px;
+              }
+      }
+      .cp_arrows [class*='cp_arrow']:after {
+          top: -4px;
+          left: -2px;
+          -webkit-box-shadow: inset 0 0 0 32px, 16px 17px;
+                  box-shadow: inset 0 0 0 24px, 8px 9px;
+      }
+    
+      .cp_arrows .cp_arrow_right_up {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+      }
+    
   
   
     .concept-block{
       margin-left: 20px;
+
+      @include sp-second(){
+        margin-left: 10px;
+      }
   
         h4{
           font-size: 44px;
@@ -1109,6 +1141,7 @@ body{
           font-size: 22px;
           color: #FFFFFF;
           line-height: 1.3;
+          letter-spacing: 0.05em;
   
           @include sp-second(){
             font-size: 10px;
@@ -1149,9 +1182,17 @@ body{
   
 
 
+
+
+
 .footer{
-padding-top: 62px;
+padding-top: 85px;
 padding-bottom: 80px;
+
+@include sp(){
+  padding-top: 60px;
+  padding-bottom:60px;
+}
 
 
 h2{
@@ -1162,6 +1203,7 @@ h2{
   
   @include sp-second(){
     padding-bottom: 40px;
+    font-size: 37px;
   }
 
 }
@@ -1207,7 +1249,7 @@ h2{
     transform: rotate(135deg);
 
     @include sp-second(){
-      right: 131px;
+      right: 115px;
       top: 10px;
     }
 
@@ -1226,7 +1268,7 @@ h2{
     transform: rotate(0deg);
 
     @include sp-second(){
-      right: 131px;
+      right: 115px;
       top: 4.5px;
     }
   }
@@ -1244,7 +1286,7 @@ h2{
 
 
     @include sp-second(){
-      right: 100px;
+      right: 85px;
       top: 10px;
       }
 
@@ -1263,7 +1305,7 @@ h2{
     transform: rotate(0deg);
 
     @include sp-second(){
-      right:100px;
+      right: 85px;
       top: 4.5px;
      }
 
@@ -1302,10 +1344,7 @@ h2{
   }
 
 }/*hover*/
-
 }/*footer-nav*/
 }
-
 }/*body*/
-
 }

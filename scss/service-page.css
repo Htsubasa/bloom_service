@@ -373,7 +373,7 @@ html body header #header-inner {
 
 @media (max-width: 375px) {
   html body header #header-inner {
-    padding-top: 10px;
+    padding-top: 32px;
   }
 }
 
@@ -393,7 +393,7 @@ html body header #header-inner .logo {
 
 @media (max-width: 375px) {
   html body header #header-inner .logo {
-    font-size: 2em;
+    font-size: 25px;
   }
 }
 
@@ -548,16 +548,23 @@ html body .mainvisual {
 html body .mainvisual .mainvisual-wrap {
   position: relative;
   background-image: url(../img/service/service_main.png);
-  background-size: contain;
+  background-size: 100% 770px;
   text-align: center;
   width: 95%;
-  height: 710px;
+  height: 770px;
   margin: 0 auto;
   /*mainvisual-text*/
 }
 
+@media (max-width: 560px) {
+  html body .mainvisual .mainvisual-wrap {
+    background-image: url(../img/service/service_sp.png);
+  }
+}
+
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap {
+    background-size: 100% 715px;
     width: 94.5%;
     margin-right: 10px;
     margin-left: 10px;
@@ -616,6 +623,12 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text p {
   line-height: 2;
 }
 
+@media (max-width: 375px) {
+  html body .mainvisual .mainvisual-wrap .mainvisual_text p {
+    font-size: 13px;
+  }
+}
+
 html body .mainvisual .mainvisual-wrap .mainvisual_text p .sp_br {
   display: initial;
 }
@@ -643,7 +656,7 @@ html body .mainvisual .mainvisual-wrap::before {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
-  height: 710px;
+  height: 770px;
 }
 
 @media (max-width: 375px) {
@@ -659,6 +672,12 @@ html body .top_text_block {
   margin-top: 160px;
   /*h2*/
   /*p*/
+}
+
+@media (max-width: 375px) {
+  html body .top_text_block {
+    margin-top: 96px;
+  }
 }
 
 html body .top_text_block h2 {
@@ -1216,7 +1235,7 @@ html body .contents_wrap .item.active {
 }
 
 html body .access {
-  margin-top: 92px;
+  margin-top: 120px;
   /*wrap*/
 }
 
@@ -1394,6 +1413,7 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
     height: 12px;
     top: -0.3em;
     left: -3px;
+    border-width: 2px 2px 0 0;
   }
 }
 
@@ -1415,6 +1435,15 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:before {
   box-shadow: inset 0 0 0 24px;
 }
 
+@media (max-width: 375px) {
+  html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:before {
+    width: 13px;
+    height: 2px;
+    right: -0.3px;
+    top: -2.3px;
+  }
+}
+
 html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:after {
   top: -4px;
   left: -2px;
@@ -1431,6 +1460,12 @@ html body .contact-wrapper .concept a .concept-block {
   margin-left: 20px;
   /*h4*/
   /*p*/
+}
+
+@media (max-width: 375px) {
+  html body .contact-wrapper .concept a .concept-block {
+    margin-left: 10px;
+  }
 }
 
 html body .contact-wrapper .concept a .concept-block h4 {
@@ -1457,6 +1492,7 @@ html body .contact-wrapper .concept a .concept-block p {
   font-size: 22px;
   color: #FFFFFF;
   line-height: 1.3;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 375px) {
@@ -1491,9 +1527,16 @@ html body .contact .contact-wrapper::before {
 }
 
 html body .footer {
-  padding-top: 62px;
+  padding-top: 85px;
   padding-bottom: 80px;
   /*footer-nav*/
+}
+
+@media (max-width: 560px) {
+  html body .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 html body .footer h2 {
@@ -1506,6 +1549,7 @@ html body .footer h2 {
 @media (max-width: 375px) {
   html body .footer h2 {
     padding-bottom: 40px;
+    font-size: 37px;
   }
 }
 
@@ -1562,7 +1606,7 @@ html body .footer .footer-nav .nav_block .arrow_first::before {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_first::before {
-    right: 131px;
+    right: 115px;
     top: 10px;
   }
 }
@@ -1583,7 +1627,7 @@ html body .footer .footer-nav .nav_block .arrow_first::after {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_first::after {
-    right: 131px;
+    right: 115px;
     top: 4.5px;
   }
 }
@@ -1603,7 +1647,7 @@ html body .footer .footer-nav .nav_block .arrow_second::before {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_second::before {
-    right: 100px;
+    right: 85px;
     top: 10px;
   }
 }
@@ -1624,7 +1668,7 @@ html body .footer .footer-nav .nav_block .arrow_second::after {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_second::after {
-    right: 100px;
+    right: 85px;
     top: 4.5px;
   }
 }

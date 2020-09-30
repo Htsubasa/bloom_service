@@ -378,7 +378,7 @@ html body header #header-inner {
 
 @media (max-width: 375px) {
   html body header #header-inner {
-    padding-top: 10px;
+    padding-top: 32px;
   }
 }
 
@@ -390,7 +390,7 @@ html body header #header-inner .logo {
   color: #414141;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body header #header-inner .logo {
     font-size: 2.5em;
   }
@@ -398,7 +398,7 @@ html body header #header-inner .logo {
 
 @media (max-width: 375px) {
   html body header #header-inner .logo {
-    font-size: 2em;
+    font-size: 25px;
   }
 }
 
@@ -447,7 +447,7 @@ html body header #header-inner .header-nav ul .g-nav {
   line-height: 67px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body header #header-inner .header-nav ul .g-nav {
     font-size: 1.4em;
     margin-left: 1.5em;
@@ -486,6 +486,12 @@ html body header #header-inner .btn-gnavi {
   /*span*/
   /*span*/
   /*span*/
+}
+
+@media (max-width: 768px) {
+  html body header #header-inner .btn-gnavi {
+    margin-top: 8px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -595,7 +601,7 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before
   border-bottom: 3px solid white;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li button:before {
     left: 500px;
   }
@@ -637,7 +643,7 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:b
   font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:first-child:before {
     left: 470px;
   }
@@ -679,7 +685,7 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:af
   font-weight: bold;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots li:last-child:after {
     left: 550px;
   }
@@ -730,7 +736,7 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active bu
   border-bottom: 3px solid #6CD6DB;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slick-dots .slick-active button:before {
     left: 500px;
   }
@@ -777,7 +783,7 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slider li {
 
 html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img {
   text-align: center;
-  width: 90%;
+  width: 93%;
   margin: 0 auto;
   /*img*/
 }
@@ -792,21 +798,14 @@ html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img {
 @media (max-width: 375px) {
   html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img {
     text-align: center;
-    width: 100%;
   }
 }
 
 html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img img {
-  width: 100%;
+  width: 30%;
   margin: 0 auto;
   height: 660px;
   text-align: center;
-}
-
-@media (max-width: 1024px) {
-  html body .mainvisual .mainvisual-wrap .slider-wrap .slider li .slider-img img {
-    width: 80%;
-  }
 }
 
 @media (max-width: 375px) {
@@ -830,7 +829,7 @@ html body .mainvisual .mainvisual-wrap .mainvisual_text {
   transition: all 1.5s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .mainvisual .mainvisual-wrap .mainvisual_text {
     top: 20%;
   }
@@ -959,7 +958,7 @@ html body .mainvisual .mainvisual-wrap .scroll_wrap span:after {
 }
 
 html body .container_pc {
-  margin-top: 94px;
+  margin-top: 120px;
   position: relative;
   /*container_wrapper_pc*/
 }
@@ -984,7 +983,7 @@ html body .container_pc .container_wrapper_pc {
   /*conctpt_text*/
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .container_pc .container_wrapper_pc {
     max-width: 765px;
     width: 100%;
@@ -1001,7 +1000,7 @@ html body .container_pc .container_wrapper_pc .main_pc .main_content_title {
   font-size: 39px;
   letter-spacing: 0.05em;
   line-height: 1.5;
-  margin-bottom: 94px;
+  margin-bottom: 88px;
   font-weight: bold;
   color: #414141;
   font-family: 'Noto Sans JP', sans-serif;
@@ -1012,7 +1011,7 @@ html body .container_pc .container_wrapper_pc .main_pc .main_content_title {
   transition: all 1.5s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .container_pc .container_wrapper_pc .main_pc .main_content_title {
     font-size: 30px;
   }
@@ -1040,8 +1039,8 @@ html body .container_pc .container_wrapper_pc .main_pc .concept a {
 }
 
 html body .container_pc .container_wrapper_pc .main_pc .concept a .cp_arrows {
-  width: 34px;
-  height: 34px;
+  width: 41px;
+  height: 41px;
   border-radius: 50%;
   /*角丸*/
   border: solid 3px #6CD6DB;
@@ -1064,10 +1063,10 @@ html body .container_pc .container_wrapper_pc .main_pc .concept a .cp_arrows [cl
 }
 
 html body .container_pc .container_wrapper_pc .main_pc .concept a .cp_arrows [class*='cp_arrow'] {
-  top: -0.3em;
+  top: -0em;
   width: 10px;
   height: 12px;
-  left: -3px;
+  left: 0px;
   margin: 0.8em;
   border-width: 2px 2px 0 0;
   border-style: solid;
@@ -1147,7 +1146,7 @@ html body .container_pc .container_wrapper_pc .concept_text {
   transition: all 1.5s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   html body .container_pc .container_wrapper_pc .concept_text {
     width: 350px;
   }
@@ -1222,7 +1221,9 @@ html body .container-wrapper .main-content .main_content_title {
 
 @media (max-width: 560px) {
   html body .container-wrapper .main-content .main_content_title {
-    font-weight: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.5;
   }
 }
 
@@ -1293,9 +1294,9 @@ html body .container-wrapper .main-content .concept a .cp_arrows [class*='cp_arr
 }
 
 html body .container-wrapper .main-content .concept a .cp_arrows [class*='cp_arrow'] {
-  top: -0.3em;
-  width: 10px;
-  height: 12px;
+  top: -0.2em;
+  width: 8px;
+  height: 8px;
   left: -3px;
   margin: 0.8em;
   border-width: 2px 2px 0 0;
@@ -1310,7 +1311,7 @@ html body .container-wrapper .main-content .concept a .cp_arrows [class*='cp_arr
 html body .container-wrapper .main-content .concept a .cp_arrows [class*='cp_arrow']:before {
   top: -1.7px;
   right: 0;
-  width: 15px;
+  width: 10px;
   height: 2px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1375,10 +1376,10 @@ html body .menu {
 
 html body .menu .menu-wrap {
   background-image: url(../img/front/menu-image.png);
-  background-size: contain;
+  background-size: 100% 545px;
   margin: 0 auto;
   position: relative;
-  height: 500px;
+  height: 545px;
   width: 100%;
   /*img*/
   /*concept*/
@@ -1391,11 +1392,12 @@ html body .menu .menu-wrap {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .menu .menu-wrap {
-    height: 560px;
-    width: 94.5%;
-    margin: 0 auto;
+    background-image: url(../img/front/menu-visual-sp.png);
+    background-size: 100% 520px;
+    height: 520px;
+    width: 95%;
   }
 }
 
@@ -1422,6 +1424,13 @@ html body .menu .menu-wrap img {
   }
 }
 
+@media (max-width: 560px) {
+  html body .menu .menu-wrap img {
+    height: 125px;
+    top: -30px;
+  }
+}
+
 @media (max-width: 375px) {
   html body .menu .menu-wrap img {
     width: 100%;
@@ -1445,7 +1454,7 @@ html body .menu .menu-wrap .concept {
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
   position: absolute;
-  top: 72%;
+  top: 74%;
   left: 45%;
   /*a*/
 }
@@ -1457,9 +1466,9 @@ html body .menu .menu-wrap .concept {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .menu .menu-wrap .concept {
-    top: 87%;
+    top: 85%;
   }
 }
 
@@ -1471,21 +1480,14 @@ html body .menu .menu-wrap .concept a {
 }
 
 html body .menu .menu-wrap .concept a .cp_arrows {
+  width: 76px;
+  height: 76px;
   border-radius: 50%;
   /*角丸*/
   border: solid 3px #FFFFFF;
-  width: 76px;
-  height: 76px;
 }
 
-@media (max-width: 768px) {
-  html body .menu .menu-wrap .concept a .cp_arrows {
-    width: 56px;
-    height: 56px;
-  }
-}
-
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .menu .menu-wrap .concept a .cp_arrows {
     width: 34px;
     height: 34px;
@@ -1514,16 +1516,17 @@ html body .menu .menu-wrap .concept a .cp_arrows [class*='cp_arrow'] {
   top: 1em;
   left: 14px;
   margin: 0.8em;
-  border-width: 2px 2px 0 0;
+  border-width: 4px 4px 0 0;
   border-style: solid;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .menu .menu-wrap .concept a .cp_arrows [class*='cp_arrow'] {
     width: 10px;
     height: 12px;
     top: -0.3em;
     left: -3px;
+    border-width: 2px 2px 0 0;
   }
 }
 
@@ -1533,16 +1536,25 @@ html body .menu .menu-wrap .concept a .cp_arrows [class*='cp_arrow']:after {
 }
 
 html body .menu .menu-wrap .concept a .cp_arrows [class*='cp_arrow']:before {
-  top: -1.7px;
-  right: 0;
+  top: -2px;
+  right: 1.3px;
   width: 15px;
-  height: 2px;
+  height: 4px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   -webkit-transform-origin: right top;
   transform-origin: right top;
   -webkit-box-shadow: inset 0 0 0 32px;
   box-shadow: inset 0 0 0 24px;
+}
+
+@media (max-width: 375px) {
+  html body .menu .menu-wrap .concept a .cp_arrows [class*='cp_arrow']:before {
+    width: 13px;
+    height: 2px;
+    right: 0.5px;
+    top: -2.5px;
+  }
 }
 
 html body .menu .menu-wrap .concept a .cp_arrows [class*='cp_arrow']:after {
@@ -1557,23 +1569,15 @@ html body .menu .menu-wrap .concept a .cp_arrows .cp_arrow_right_up {
   transform: rotate(0deg);
 }
 
-@media (max-width: 768px) {
-  html body .menu .menu-wrap .concept a .cp_arrows .cp_arrow_right_up {
-    top: 0.4em;
-    left: 5px;
-  }
-}
-
-@media (max-width: 375px) {
-  html body .menu .menu-wrap .concept a .cp_arrows .cp_arrow_right_up {
-    top: -5px;
-    left: -4px;
-  }
-}
-
 html body .menu .menu-wrap .concept a .concept-block {
-  margin-left: 7px;
+  margin-left: 20px;
   /*h4*/
+}
+
+@media (max-width: 560px) {
+  html body .menu .menu-wrap .concept a .concept-block {
+    margin-left: 10px;
+  }
 }
 
 html body .menu .menu-wrap .concept a .concept-block h4 {
@@ -1590,7 +1594,7 @@ html body .menu .menu-wrap .concept a .concept-block h4 {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .menu .menu-wrap .concept a .concept-block h4 {
     font-size: 20px;
   }
@@ -1608,7 +1612,7 @@ html body .menu .menu-wrap .concept a .concept-block p {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .menu .menu-wrap .concept a .concept-block p {
     font-size: 10px;
   }
@@ -1632,9 +1636,9 @@ html body .menu .menu-wrap .concept:hover .cp_arrows {
 }
 
 html body .gallery_pc {
-  padding-top: 165px;
+  padding-top: 154px;
   background-image: url(../img/front/gallery-logo.png);
-  background-position: 70% 22.5%;
+  background-position: 70% 20%;
   background-size: 320px;
   padding-bottom: 140px;
   overflow: hidden;
@@ -1684,7 +1688,7 @@ html body .gallery_pc .item_wrap_pc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 90px;
+  margin-top: 83px;
   /*slick-dots*/
   /*gallery-item*/
 }
@@ -1836,6 +1840,7 @@ html body .gallery_pc .item_wrap_pc .gallery-item h3 {
           writing-mode: vertical-rl;
   font-size: 47px;
   letter-spacing: 0.05;
+  font-family: 'Josefin Sans', sans-serif;
   /*span*/
 }
 
@@ -1847,6 +1852,7 @@ html body .gallery_pc .item_wrap_pc .gallery-item h3 {
 
 html body .gallery_pc .item_wrap_pc .gallery-item h3 span {
   color: #6CD6DB;
+  margin-top: 20px;
 }
 
 html body .gallery_pc .line_slick {
@@ -1877,6 +1883,9 @@ html body .gallery-wrap {
   margin: 0 auto;
   margin-top: 90px;
   padding-bottom: 60px;
+  background-image: url(../img/front/gallery-logo.png);
+  background-position: 100px 40px;
+  background-size: 220px;
 }
 
 @media (max-width: 375px) {
@@ -1898,6 +1907,8 @@ html body .gallery-wrap .gallery-h2 {
   -webkit-transform: translate(0, 30px);
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 html body .gallery-wrap .gallery-h2.active {
@@ -2031,9 +2042,10 @@ html body .event_pc {
 
 html body .event_pc .event_pc_wrap {
   background-image: url(../img/front/event.png);
-  background-size: contain;
-  height: 546px;
+  background-size: 100% 545px;
+  margin: 0 auto;
   position: relative;
+  height: 545px;
   /*event-content*/
 }
 
@@ -2062,6 +2074,7 @@ html body .event_pc .event_pc_wrap .event-content {
   margin: auto;
   height: 307px;
   /*h2*/
+  border-bottom: 2px solid white;
   /*p*/
 }
 
@@ -2087,7 +2100,6 @@ html body .event_pc .event_pc_wrap .event-content h2 {
 }
 
 html body .event_pc .event_pc_wrap .event-content p {
-  border-bottom: 2px solid white;
   color: white;
   display: inline-block;
   font-size: 21px;
@@ -2132,7 +2144,7 @@ html body .event-wrap {
 
 @media (max-width: 560px) {
   html body .event-wrap {
-    margin-bottom: 450px;
+    margin-bottom: 300px;
   }
 }
 
@@ -2199,7 +2211,7 @@ html body .event-wrap img {
   html body .event-wrap img {
     position: absolute;
     z-index: -1;
-    top: 3400px;
+    top: 3500px;
     width: 100%;
   }
 }
@@ -2217,7 +2229,7 @@ html body .event-wrap img.active {
 }
 
 html body .access {
-  margin-top: 92px;
+  margin-top: 120px;
   /*wrap*/
 }
 
@@ -2356,7 +2368,7 @@ html body .contact-wrapper .concept a .cp_arrows {
   border: solid 3px #FFFFFF;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .contact-wrapper .concept a .cp_arrows {
     width: 34px;
     height: 34px;
@@ -2389,12 +2401,13 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
   border-style: solid;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 560px) {
   html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow'] {
     width: 10px;
     height: 12px;
     top: -0.3em;
     left: -3px;
+    border-width: 2px 2px 0 0;
   }
 }
 
@@ -2416,6 +2429,15 @@ html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:before {
   box-shadow: inset 0 0 0 24px;
 }
 
+@media (max-width: 375px) {
+  html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:before {
+    width: 13px;
+    height: 2px;
+    right: 0.5px;
+    top: -2.5px;
+  }
+}
+
 html body .contact-wrapper .concept a .cp_arrows [class*='cp_arrow']:after {
   top: -4px;
   left: -2px;
@@ -2432,6 +2454,12 @@ html body .contact-wrapper .concept a .concept-block {
   margin-left: 20px;
   /*h4*/
   /*p*/
+}
+
+@media (max-width: 375px) {
+  html body .contact-wrapper .concept a .concept-block {
+    margin-left: 10px;
+  }
 }
 
 html body .contact-wrapper .concept a .concept-block h4 {
@@ -2458,6 +2486,7 @@ html body .contact-wrapper .concept a .concept-block p {
   font-size: 22px;
   color: #FFFFFF;
   line-height: 1.3;
+  letter-spacing: 0.05em;
 }
 
 @media (max-width: 375px) {
@@ -2492,9 +2521,16 @@ html body .contact .contact-wrapper::before {
 }
 
 html body .footer {
-  padding-top: 62px;
+  padding-top: 85px;
   padding-bottom: 80px;
   /*footer-nav*/
+}
+
+@media (max-width: 560px) {
+  html body .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 html body .footer h2 {
@@ -2507,6 +2543,7 @@ html body .footer h2 {
 @media (max-width: 375px) {
   html body .footer h2 {
     padding-bottom: 40px;
+    font-size: 37px;
   }
 }
 
@@ -2563,7 +2600,7 @@ html body .footer .footer-nav .nav_block .arrow_first::before {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_first::before {
-    right: 131px;
+    right: 115px;
     top: 10px;
   }
 }
@@ -2584,7 +2621,7 @@ html body .footer .footer-nav .nav_block .arrow_first::after {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_first::after {
-    right: 131px;
+    right: 115px;
     top: 4.5px;
   }
 }
@@ -2604,7 +2641,7 @@ html body .footer .footer-nav .nav_block .arrow_second::before {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_second::before {
-    right: 100px;
+    right: 85px;
     top: 10px;
   }
 }
@@ -2625,7 +2662,7 @@ html body .footer .footer-nav .nav_block .arrow_second::after {
 
 @media (max-width: 375px) {
   html body .footer .footer-nav .nav_block .arrow_second::after {
-    right: 100px;
+    right: 85px;
     top: 4.5px;
   }
 }
