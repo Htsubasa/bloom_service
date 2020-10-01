@@ -411,7 +411,7 @@ html body header #header-inner .header-nav {
   display: none;
   font-family: 'Cabin', sans-serif;
   position: fixed;
-  height: 400px;
+  height: 450px;
   background-color: #ffffff;
   width: 100%;
   color: black;
@@ -695,7 +695,6 @@ html body .top_text_block h2 {
   text-align: center;
   line-height: 1em;
   font-weight: 600;
-  font-weight: bold;
   /*span*/
 }
 
@@ -771,7 +770,7 @@ html body .contents .content_wrap_pc .item {
   transition: all 2s;
   margin: 0 0 0 auto;
   margin-bottom: 120px;
-  margin-top: 120px;
+  margin-top: 90px;
   /*h2*/
   /*item_box*/
   /*item_box.active*/
@@ -858,7 +857,7 @@ html body .contents .content_wrap_pc .item .item_box {
   top: 15%;
   left: -10%;
   width: 464px;
-  height: 364px;
+  height: 360px;
   background-color: #FFFFFF;
   border-radius: 5px;
   padding-top: 80px;
@@ -900,6 +899,7 @@ html body .contents .content_wrap_pc .item .item_box h3 {
   font-size: 20px;
   margin-bottom: 18px;
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
 }
 
 html body .contents .content_wrap_pc .item .item_box p {
@@ -940,7 +940,7 @@ html body .contents .content_wrap_pc .item_even {
   transition: all 2s;
   margin: 0 0 0 auto;
   margin-bottom: 120px;
-  margin-top: 120px;
+  margin-top: 90px;
   margin-left: 0;
   /*h2*/
   /*item_box*/
@@ -977,7 +977,7 @@ html body .contents .content_wrap_pc .item_even h2 {
   -webkit-transition: all 1.5s;
   transition: all 1.5s;
   font-family: "Golden Plains - Demo";
-  width: 450px;
+  width: 480px;
   /*span*/
 }
 

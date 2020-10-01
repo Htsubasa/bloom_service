@@ -114,7 +114,7 @@ body{
             display: none;
             @include font-type;
             position: fixed;
-            height: 400px;
+            height: 450px;
             background-color: #ffffff;
             width: 100%;
             color: rgb(0, 0, 0);
@@ -411,7 +411,6 @@ body{
         text-align: center;
         line-height: 1em;
         font-weight: 600;
-        font-weight: bold;
 
 
         @include pc{
@@ -476,7 +475,7 @@ body{
       transition : all 2s;
       margin: 0 0 0 auto;
       margin-bottom: 120px;
-      margin-top: 120px;
+      margin-top: 90px;
 
       @include pc{
         height: 426px;
@@ -555,7 +554,7 @@ body{
         top: 15%;
         left: -10%;
           width: 464px;
-          height: 364px;
+          height: 360px;
           background-color: #FFFFFF;
           border-radius: 5px;
           padding-top: 80px;
@@ -590,6 +589,7 @@ body{
               font-size: 20px;
               margin-bottom: 18px;
               @include font-type-third();
+              font-weight: 900;
           }
 
           p{
@@ -632,7 +632,7 @@ body{
   transition : all 2s;
   margin: 0 0 0 auto;
   margin-bottom: 120px;
-  margin-top: 120px;
+  margin-top: 90px;
   margin-left: 0;
 
   @include pc{
@@ -665,7 +665,7 @@ body{
       -webkit-transform: translate(-30px, 0px);
       transition: all 1.5s;
       font-family: "Golden Plains - Demo";
-      width: 450px;
+      width: 480px;
 
 
       @include pc{
