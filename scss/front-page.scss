@@ -126,7 +126,7 @@ body{
             display: none;
             @include font-type;
             position: fixed;
-            height: 400px;
+            height: 450px;
             background-color: #ffffff;
             width: 100%;
             color: rgb(0, 0, 0);
@@ -280,35 +280,55 @@ body{
     .slider-wrap{
       .slick-dots{
 
+        @include sp(){
+          width: 200px;
+        }
+
         li{
           margin-right: 7px;
           margin-left: 7px;
           @include font-type;
 
+          @include sp{
+            left: 63vw;
+            top: -60px;
+          }
+
+          @include sp{
+            left: 110vw;
+            top: -20px;
+          }
+
+
           @include sp-second{
             margin-right: 2px;
             margin-left: 2px;
+            left: -2vw;
+            top: -2px;
           }
+
+       
+
 
 
         button{
           &:before{
         content: '';
-        width: 40px;
+        width: 35px;
         text-indent: 0px;
         position: absolute;
         top: -58px;
         left: 75vw;
         border-bottom: 3px solid white;
 
-        @include sp-second(){
-          top: -5px;
-          left: -4vw;
-          width: 20px;
+        @include sp{
+          left: -3vw;
+          top:-15px;
         }
-        
-
-
+        @include sp-second(){
+          left: 111vw;
+          top:-35px;
+        }
       
 
         }/*before*/
@@ -327,17 +347,20 @@ body{
           @include font-type-third();
 
           @include tab{
-            left: 70vw;
+            left: 72vw;
           }
 
+          @include sp{
+            left: -8vw;
+            top:-10px;
+          }
+     
 
           @include sp-second(){
-            left:-10vw;
-            top: 0px;
+            left: 102vw;
+            top:-30px;
           }
-        
-       
-          
+
 
         }/*li:first-child:before*/
   
@@ -355,20 +378,19 @@ body{
           }
 
           @include tab{
-            left: 81.5vw;
+            left: 80vw;
           }
 
-
-          @include sp(){
-            left:80.5vw;
+          @include sp{
+            left: 7vw;
+            top:-10px;
           }
 
           @include sp-second(){
-            left: 4vw;
-            top: 0px;
-
+            left: 121vw;
+            top:-30px;
           }
-    
+
 
       
         }
@@ -378,7 +400,7 @@ body{
         .slick-active{
           button{
           &:before{
-        width: 40px;
+        width: 35px;
         content: '';
         text-indent: 0px;
         position: absolute;
@@ -386,13 +408,17 @@ body{
         left: 75vw;
         border-bottom: 3px solid #6CD6DB;
 
-        @include sp-second(){
-          top: -5px;
-          left: 0px;
-          width: 20px;
+        @include sp{
+          left: -3vw;
+          top:-15px;
         }
 
-   
+       
+        @include sp-second(){
+          left: 108vw;
+          top:-35px;
+        }
+
     
 
         }/*before*/
@@ -799,7 +825,6 @@ span:after{
 
 
 
-
 .container{
   display: none;
 
@@ -808,6 +833,7 @@ span:after{
     display: initial;
     margin-top: 94px;
     position: relative;
+    overflow: hidden;
   }
   
     &-wrapper{
@@ -833,7 +859,7 @@ span:after{
                 letter-spacing: 0.05em;
                 line-height: 2.26;
                 margin-bottom: 47px;
-                font-weight: bold;
+                font-weight: 900;
                 color: #414141;
                 @include font-type-third();
                 opacity : 0;
@@ -978,19 +1004,41 @@ span:after{
 
         }/*main-content*/
 
-        .side-text{
-          display: none;
+        .side_text_block{
+
+          position: relative;
+          max-width: 768px;
+          width: 100%;
+        
+
+          .side-text{
+            display: none;
+            
+            @include tab{
+              display: initial;
+              position: absolute;
+              right: 0px;
+              top: -440px;
+              z-index: -1;
+
+              @include sp{
+                top: -560px;
+              }
+
+              @include sp-second(){
+                top: -580px;
+                right: -20px;
+              }
           
-          @include sp{
-            position: absolute;
-            right: 0px;
-            top: 40px;
-            z-index: -1;
+            } 
           }
-         
         }
+
+      
     }/*wrapper*/
 }
+
+
 
 
 .menu{
@@ -1499,7 +1547,7 @@ span:after{
       -webkit-transform: translate(0, 30px);
       transition : all 1.5s;
       font-size: 25px;
-      font-weight: bold;
+      font-weight: 900;
     }
 
     .gallery-h2.active{
@@ -1669,6 +1717,7 @@ span:after{
           margin-bottom: 20px;
           font-size: 31px;
           @include font-type-third;
+          font-weight: 900;
 
 
       @include tab{
@@ -1683,6 +1732,9 @@ span:after{
           font-size: 21px;
           @include font-type-third;
           font-weight: bold;
+          border-bottom: 2px solid white;
+          padding-bottom: 7px;
+
 
           @include tab{
             font-size: 15px;
@@ -1697,6 +1749,27 @@ span:after{
     transform : translate(0, 0);
 } 
   }/*event_pc_wrap*/
+
+
+    
+  .event_pc_wrap::before {
+    width: 100%;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    height: 545px;
+  
+    @include tab(){
+      height: 450px;
+    }
+   
+  }
+
+
 }/*event_pc*/
 
 
@@ -1735,8 +1808,8 @@ span:after{
             transform : translate(0, 30px);
             -webkit-transform: translate(0, 30px);
             transition : all 1.5s;
-            padding-top: 64px;
-            padding-bottom: 60px; 
+            padding-top: 57px;
+            padding-bottom: 53px; 
             width: 313px;
             margin: 0 auto;   
            
@@ -1745,11 +1818,11 @@ span:after{
                 color: #6CD6DB;
                 margin-bottom: 25px;
                 @include font-type-third;
-                font-weight: bold;
+                font-weight: 900;
 
 
                 @include sp{
-                font-size: 22px;  
+                font-size: 26px;  
                 }
 
             }/*h2*/
@@ -1759,6 +1832,7 @@ span:after{
                 color: #414141;
                 display: inline-block;
                 font-size: 14px;
+                font-weight: bold;
                 @include font-type-third;
             }/*p*/
 
@@ -1776,6 +1850,7 @@ span:after{
           -webkit-transform: translate(0, 50px);
           transition : all 1.5s;
           width: 100%;
+          position: relative;
 
           @include sp(){
             position: absolute;
@@ -1785,7 +1860,7 @@ span:after{
         }
 
             @include sp-second(){
-                top: 230px;
+                top: 255px;
             }
 
 
@@ -1795,6 +1870,20 @@ span:after{
           opacity : 1;
           transform : translate(0, 0);
       }
+
+
+  img::before {
+    width: 100%;
+    z-index: 0;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+   
+  }
+
 
     }/*wrap*/
 }/*event*/

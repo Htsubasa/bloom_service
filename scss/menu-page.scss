@@ -323,6 +323,10 @@ body{
            margin-bottom: 43px;
            font-weight: normal;
 
+           @include sp-second(){
+             font-size: 14px;
+           }
+
        }/*sub_mainvisual_text*/
 
       }/*h1*/
@@ -333,6 +337,10 @@ body{
         font-size: 16px;
         font-weight: normal;
         line-height: 2;
+
+        @include sp-second(){
+          font-size: 13px;
+        }
         
         .sp_br{
           display: initial;
@@ -541,12 +549,11 @@ body{
                 font-family: "Golden Plains - Demo";
                 font-weight: normal;
                 text-align: center;
-                margin-top: 70px;
+                margin-top: 76px;
                 opacity: 0;
                 transform : translate(0,30px);
                 -webkit-transform: translate(0,30px);
                 transition: all 2s;
-
               }
 
               @include sp-second(){
@@ -1355,10 +1362,10 @@ body{
 
 .room{
 
-    margin-top: 152px;
+    margin-top: 143px;
 
     @include sp-second(){
-      margin-top: 82px;
+      margin-top: 90px;
     }
 
     .room-wrap{
@@ -1386,8 +1393,8 @@ body{
     font-family: 'Golden Plains - Demo';
     font-weight: normal;
     position: absolute;
-    top: 36%;
-    left: 49%;
+    top: 41%;
+    left: 75%;
     text-align: center;
     margin: auto;
     width: 100%;
@@ -1404,7 +1411,7 @@ body{
     }
 
     @include sp-second(){
-      top: 20%;
+      top: 30%;
       left: -4%;
       font-size: 47vw;
       }
@@ -1446,7 +1453,7 @@ body{
     }
 
     @include sp-second(){
-      top: 87%;
+      top: 84%;
     }
     
 
@@ -1454,101 +1461,89 @@ body{
       display: flex;
 
   
-    .cp_arrows {
-      border-radius: 50%;/*角丸*/
-      border: solid 3px #FFFFFF;
-      width: 76px;
-      height: 76px;
-
-      @include tab{
-        width: 56px;
-        height: 56px;
-      }
-
-
-      @include sp-second(){
-        width: 34px;
-        height: 34px;
-      }
-
-    }
-    .cp_arrows [class*='cp_arrow'] {
-        position: relative;
-        display: inline-block;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        vertical-align: middle;
-        color: #FFFFFF;
-    }
-    .cp_arrows [class*='cp_arrow']:after,
-    .cp_arrows [class*='cp_arrow']:before {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        content: '';
-    }
-    .cp_arrows [class*='cp_arrow'] {
-      width: 14px;
-      height: 15px;
-      top: 1em;
-      left: 14px;
-        margin: 0.8em;
-        border-width: 2px 2px 0 0;
-        border-style: solid;
-
-
-
-        @include sp-second(){
-          width: 10px;
-          height: 12px;  
-          top: -0.3em;
-          left: -3px;
-        }
-
-
-    }
-
-    .cp_arrows [class*='cp_arrow']:before,
-    .cp_arrows [class*='cp_arrow']:after {
-        position: absolute;
-    }
-
-    .cp_arrows [class*='cp_arrow']:before {
-        top: -1.7px;
-        right: 0;
-        width: 15px;
-        height: 2px;
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg);
-        -webkit-transform-origin: right top;
-                transform-origin: right top;
-        -webkit-box-shadow: inset 0 0 0 32px;
-                box-shadow: inset 0 0 0 24px;
-
-      
-    }
-    .cp_arrows [class*='cp_arrow']:after {
-        top: -4px;
-        left: -2px;
-        -webkit-box-shadow: inset 0 0 0 32px, 16px 17px;
-                box-shadow: inset 0 0 0 24px, 8px 9px;
-    }
-
-    .cp_arrows .cp_arrow_right_up {
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-        
-        @include tab{
-            top: 0.4em;
-            left: 5px;
+      .cp_arrows {
+  
+        width: 76px;
+        height: 76px;
+          border-radius: 50%;/*角丸*/
+          border: solid 3px #FFFFFF;
+    
+          @include sp(){
+            width: 34px;
+            height: 34px;
           }
+    
+    
+      }
+      .cp_arrows [class*='cp_arrow'] {
+          position: relative;
+          display: inline-block;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          vertical-align: middle;
+          color: #FFFFFF;
+      }
+      .cp_arrows [class*='cp_arrow']:after,
+      .cp_arrows [class*='cp_arrow']:before {
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          content: '';
+      }
+      .cp_arrows [class*='cp_arrow'] {
+        width: 14px;
+        height: 15px;
+        top: 1em;
+        left: 14px;
+          margin: 0.8em;
+          border-width: 4px 4px 0 0;
+          border-style: solid;
+    
+          @include sp(){
+            width: 10px;
+            height: 12px;  
+            top: -0.3em;
+            left: -3px;  
+            border-width: 2px 2px 0 0;
 
-          @include sp-second(){
-            top: -5px;
-            left: -4px;
           }
-    }
+    
+      }
+      .cp_arrows [class*='cp_arrow']:before,
+      .cp_arrows [class*='cp_arrow']:after {
+          position: absolute;
+      }
+    
+      .cp_arrows [class*='cp_arrow']:before {
+          top: -2px;
+          right: 1.3px;
+          width: 15px;
+          height: 4px;
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg);
+          -webkit-transform-origin: right top;
+                  transform-origin: right top;
+          -webkit-box-shadow: inset 0 0 0 32px;
+                  box-shadow: inset 0 0 0 24px;
 
-
+              @include sp-second(){
+                width: 13px;
+                height: 2px;
+                right: 0.5px;
+                top: -2.5px;
+              }
+      }
+      .cp_arrows [class*='cp_arrow']:after {
+          top: -4px;
+          left: -2px;
+          -webkit-box-shadow: inset 0 0 0 32px, 16px 17px;
+                  box-shadow: inset 0 0 0 24px, 8px 9px;
+      }
+    
+      .cp_arrows .cp_arrow_right_up {
+          -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+      }
+    
 
     .concept-block{
 
@@ -1618,7 +1613,7 @@ body{
 
 
 .access{
-  margin-top: 120px;
+  margin-top: 124px;
 
   &-wrap{
       text-align: center;
@@ -1628,6 +1623,7 @@ body{
           color: #6CD6DB;
           letter-spacing: 0.05em;
           @include font-type-second;
+          font-weight: 600;
 
           @include sp(){
             font-size:45px;
@@ -1731,8 +1727,8 @@ body{
           border: solid 3px #FFFFFF;
     
           @include sp-second(){
-            width: 34px;
-            height: 34px;
+            width: 44px;
+            height: 44px;
           }
     
     
@@ -1763,8 +1759,8 @@ body{
           @include sp-second(){
             width: 10px;
             height: 12px;  
-            top: -0.3em;
-            left: -3px;  
+            top: 0em;
+            left: 2px;  
             border-width: 2px 2px 0 0;
 
           }
@@ -1827,7 +1823,7 @@ body{
             }
   
             @include sp-second(){
-              font-size: 20px;
+              font-size: 25px;
             }
   
         }/*h4*/
@@ -1839,7 +1835,7 @@ body{
           letter-spacing: 0.05em;
   
           @include sp-second(){
-            font-size: 10px;
+            font-size: 12px;
           }
         }/*p*/
   
@@ -1882,7 +1878,7 @@ body{
 
 .footer{
 padding-top: 85px;
-padding-bottom: 80px;
+padding-bottom: 100px;
 
 @include sp(){
   padding-top: 60px;

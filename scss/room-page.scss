@@ -317,6 +317,11 @@ body{
          margin-bottom: 43px;
          font-weight: normal;
 
+         @include sp-second(){
+          font-size: 14px;
+        }
+
+
 
      }/*sub_mainvisual_text*/
 
@@ -1027,7 +1032,6 @@ body{
   
     a{
       display: flex;
-  
       .cp_arrows {
   
         width: 76px;
@@ -1036,8 +1040,8 @@ body{
           border: solid 3px #FFFFFF;
     
           @include sp-second(){
-            width: 34px;
-            height: 34px;
+            width: 44px;
+            height: 44px;
           }
     
     
@@ -1068,8 +1072,8 @@ body{
           @include sp-second(){
             width: 10px;
             height: 12px;  
-            top: -0.3em;
-            left: -3px;  
+            top: 0em;
+            left: 2px;  
             border-width: 2px 2px 0 0;
 
           }
@@ -1132,7 +1136,7 @@ body{
             }
   
             @include sp-second(){
-              font-size: 20px;
+              font-size: 25px;
             }
   
         }/*h4*/
@@ -1144,7 +1148,7 @@ body{
           letter-spacing: 0.05em;
   
           @include sp-second(){
-            font-size: 10px;
+            font-size: 12px;
           }
         }/*p*/
   
